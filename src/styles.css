@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+input{
+  color: #bbb;
+}
+
+div{
+  background-color:white;
+}
+
+.add{
+  background: linear-gradient(to right, #f857a6, #ff5858)
+
+}
+.btn {
+    background-color: white; 
+   color: #000000; 
+    padding: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    float:right;
+  }
