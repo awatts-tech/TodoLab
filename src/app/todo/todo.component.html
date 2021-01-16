@@ -8,7 +8,14 @@
                 <div class="todo-entry">
                 <button class = "Completed"  *ngIf="Todos.completed === true" >completed</button>
                 
-                <div>{{Todos.task}}</div> <button class="btn"><i class="fa fa-close"></i></button>
+                <!-- <div [ngClass]="{'strikethrough':Todos.completed === True}"> -->
+                <!-- still working on above line of code to apply styling to task -->
+                <div>
+                    {{Todos.task}}
+                                
+                </div>
+                
+                <button class="btn"><i class="fa fa-close"></i></button>
                 </div>
             </li>  
         </ol>
@@ -19,3 +26,4 @@
     </form>
 </div>
 
+<!-- [ngClass]="{'strikethrough':Todos.completed === True}" -->

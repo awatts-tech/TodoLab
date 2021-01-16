@@ -6,3 +6,9 @@ h1{
 .btn{
    float: right;
 }
+
+/* line through task when completed */
+/* .strikethrough{
+
+    text-decoration: line-through;
+} */
