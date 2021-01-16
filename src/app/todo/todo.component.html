@@ -4,18 +4,17 @@
     <form>
         <input  type="filter" name="entry" placeholder="A place to store your todos" [(ngModel)]="filterList" (click)="filterTodo()">
         <ol>
-            <li *ngFor="let Todos of Todos; let i = index;" >
+            <li *ngFor="let Todos of Todos;" >
                 <div class="todo-entry">
                 <button class = "Completed">completed</button>
                 
-                <div>{{Todos.task}}</div>
-                <button class="btn"><i class="fa fa-close"></i></button>
+                <div>{{Todos.task}}</div> <button class="btn"><i class="fa fa-close"></i></button>
                 </div>
             </li>  
         </ol>
         
-        <input type="Text" name="AddEntry" placeholder="Add your todo" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()">
-        <button class="add">Add</button>
+        <input type="Text" name="AddEntry" placeholder="Add your todo" [(ngModel)]="todoTitle" >
+        <button class="add" (click)="addTodo()"  >Add</button>
 
     </form>
 </div>

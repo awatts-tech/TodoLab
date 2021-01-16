@@ -19,9 +19,14 @@ div{
 }
 .btn {
     background-color: white; 
-   color: #000000; 
+    color: #000000; 
     padding: 5px; 
     font-size: 16px; 
     cursor: pointer; 
     float:right;
+    display: inline;
   }
+
+
+
+  
