@@ -4,9 +4,9 @@
     <form>
         <input  type="filter" name="entry" placeholder="A place to store your todos" [(ngModel)]="filterList" (click)="filterTodo()">
         <ol>
-            <li *ngFor="let Todos of Todos;" >
+            <li *ngFor="let Todos of Todos; let i = index;">
                 <div class="todo-entry">
-                <button class = "Completed"  *ngIf="Todos.completed === true" >completed</button>
+                <button class = "Completed"  *ngIf="Todos.completed === false" (click)="markCompleted()" >Complete</button>
                 
                 <!-- <div [ngClass]="{'strikethrough':Todos.completed === True}"> -->
                 <!-- still working on above line of code to apply styling to task -->
@@ -15,15 +15,13 @@
                                 
                 </div>
                 
-                <button class="btn"><i class="fa fa-close"></i></button>
+                <button class="btn" (click)= "removeItem()"><i class="fa fa-close"></i></button>
                 </div>
             </li>  
         </ol>
         
         <input type="Text" name="AddEntry" placeholder="Add your todo" [(ngModel)]="todoTitle" >
-        <button class="add" (click)="addTodo()"  >Add</button>
+        <button class="add" (click)="addTask()"  >Add</button>
 
     </form>
 </div>
-
-<!-- [ngClass]="{'strikethrough':Todos.completed === True}" -->

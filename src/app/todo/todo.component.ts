@@ -53,11 +53,11 @@ export class TodoComponent implements OnInit {
 
   }
 
-addTodo(): void{
+addTask(): void{
   this.Todos.push(
     {
   task: this.todoTitle,
-  completed: true
+  completed: false
   })
 
   this.todoTitle='';
@@ -74,6 +74,19 @@ addTodo(): void{
 
 //   };
 
+// }
+
+
+
+// markCompleted(){
+// function to mark to do list item completed goes here
+// }
+
+// removeItem(){
+//   const i = this.Todos.indexOf(this.Todos);
+    
+//   return this.Todos.splice(i, 1);
+// //   //function to remove task
 // }
 
 }
