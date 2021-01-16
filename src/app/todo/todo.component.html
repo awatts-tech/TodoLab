@@ -6,7 +6,7 @@
         <ol>
             <li *ngFor="let Todos of Todos;" >
                 <div class="todo-entry">
-                <button class = "Completed">completed</button>
+                <button class = "Completed"  *ngIf="Todos.completed === true" >completed</button>
                 
                 <div>{{Todos.task}}</div> <button class="btn"><i class="fa fa-close"></i></button>
                 </div>
@@ -19,5 +19,3 @@
     </form>
 </div>
 
-<!-- 
-*[ngClass]= "todo {{ (todo.completed ? 'done' : '')}}" -->
