@@ -2,15 +2,15 @@
     <h1>Todo List</h1>
     <p> A place to store your todos</p>
     <form>
-        <input  type="filter" name="entry" placeholder="A place to store your todos" [(ngModel)]="filterList" (click)="filterTodo()">
+        <input  type="filter" name="entry" placeholder="A place to store your todos" [(ngModel)]="filterList" >
         <ol>
             <li *ngFor="let Todos of Todos; let i = index;">
                 <div class="todo-entry">
                 <button class = "Completed"  *ngIf="Todos.completed === false" (click)="markCompleted()" >Complete</button>
                 
-                <!-- <div [ngClass]="{'strikethrough':Todos.completed === True}"> -->
+                <div [ngClass]="{'strikethrough':Todos.completed === True}">
                 <!-- still working on above line of code to apply styling to task -->
-                <div>
+                <!-- <div> -->
                     {{Todos.task}}
                                 
                 </div>
@@ -25,3 +25,6 @@
 
     </form>
 </div>
+
+
+<!-- (click)="filterTodo()" add tgus to li tag -->

@@ -15,6 +15,7 @@ interface Todo{
 export class TodoComponent implements OnInit {
   Todos: { task: string; completed: boolean; }[];
   todoTitle: string;
+  filterList: string;
 
   constructor() {
 

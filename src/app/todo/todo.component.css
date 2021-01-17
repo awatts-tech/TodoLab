@@ -8,7 +8,7 @@ h1{
 }
 
 /* line through task when completed */
-/* .strikethrough{
+.strikethrough{
 
     text-decoration: line-through;
-} */
+}
